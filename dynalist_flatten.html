@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Dynalist Flat List</title>
+    <link rel="stylesheet" type="text/css" href="dynalist_flatten.css" />
+    <script src="dynalist_flatten.js"></script>
+</head>
+<body onload="onBodyLoad();">
+
+<h1>Dynalist Flattener</h1>
+
+This utility allows you to search a Dynalist outline and then see the
+matching items as a flat sorted list.
+
+<div id="controlPanel" class="panel">
+    API Key <span class="fieldLabelExtra">(never stored)</span>
+    <input id="apiKeyInput" class="controlPanelTextField" type="text"><br/>
+    Document URL<br/>
+    <input id="docUrlInput" class="controlPanelTextField" type="text"><br/>
+    Filter <span class="fieldLabelExtra">(regular expression)</span>
+    <input id="filterInput" class="controlPanelTextField" type="text" value=".*"><br/>
+    Sort by<br/>
+    <select id="sortResultsSelect" class="controlPanelSelect">
+        <option value="none">Don't Sort</option>
+        <option value="title" selected="true">Title</option>
+        <option value="note">Note</option>
+        <option value="regex">Filter</option>
+    </select><br/>
+    <br/>
+    <button id="goButton" type="button" onclick="onGoButtonClick();">Go!</button>
+</div>
+
+<div id="resultsPanel" class="panel">
+    <span class="holdingText">Results will appear here after you click
+        "Go".</span>
+</div>
+
+</body>
+</html>

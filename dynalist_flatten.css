@@ -1,0 +1,45 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.panel {
+    padding: 1em;
+    margin: 1em;
+    border: thin solid gray;
+}
+
+.controlPanelTextField {
+    width: 95%;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+select.controlPanelSelect {
+    width: 95%;
+    background: none;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+.fieldLabelExtra {
+    font-size: 80%;
+    font-style: italic;
+    color: darkgray;
+}
+
+
+.holdingText {
+    font-style: italic;
+    color: lightgray;
+}
+
+.dynalistTitle {
+    text-decoration: none;
+    color: black;
+}
+
+.dynalistNote {
+    font-size: small;
+    display: block;
+    padding-left: 2em;
+}
